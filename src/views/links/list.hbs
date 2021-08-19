@@ -1,0 +1,27 @@
+<div class='container'>
+	<div class='row text-center'>
+		{{#each links}}
+			<div class='col-sm-6 col-lg-4 p-3 mw-320px'>
+				<div class='card'>
+					<div class='card-body'>
+						<a target='_blank' href='{{URL}}'>
+							<h3 class='card-title text-capitalize'>{{TITLE}}
+							</h3>
+						</a>
+						<p class='card-text'>{{DESCRIPTION}}</p>
+						<p>{{timeago CREATE_AT}}</p>
+						<a href='/links/delete/{{ID}}' class='btn btn-danger'>Delete Link</a>
+						<a href='/links/edit/{{ID}}' class='btn btn-secondary'>Edit</a>
+					</div>
+				</div>
+			</div>
+		{{else}}
+			<div class='col-md-4 mx-auto'>
+				<div class='card card-body text-center'>
+					<p>There are not links saved yet</p>
+					<a href='/links/add' class='btn btn-primary'>Create One!</a>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</div>

@@ -1,0 +1,29 @@
+{
+	"name": "app-node-mysql-links",
+	"version": "1.0.0",
+	"description": "A litler practice of nodejs, mysql, crud, es6, etc",
+	"main": "src/index.js",
+	"scripts": {
+		"dev": "npx nodemon src/"
+	},
+	"author": "Andres Villalba",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"connect-flash": "^0.1.1",
+		"express": "^4.17.1",
+		"express-handlebars": "^5.3.3",
+		"express-mysql-session": "^2.1.6",
+		"express-session": "^1.17.2",
+		"express-validator": "^6.12.1",
+		"morgan": "^1.10.0",
+		"mysql": "^2.18.1",
+		"passport": "^0.4.1",
+		"passport-local": "^1.0.0",
+		"timeago.js": "^4.0.2"
+	},
+	"devDependencies": {
+		"colors": "^1.4.0",
+		"nodemon": "^2.0.12"
+	}
+}
